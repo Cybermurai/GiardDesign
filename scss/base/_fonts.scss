@@ -1,0 +1,39 @@
+@font-face {
+  font-weight: 400;
+  font-family: Inter;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/inter-regular.woff2') format('woff2'),
+    url('../fonts/inter-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Montserrat;
+  font-style: normal;
+  src: local(''),
+    url('../fonts/montserrat-medium.woff2') format('woff2'),
+    url('../fonts/montserrat-medium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Montserrat;
+  font-style: italic;
+  src: local(''),
+    url('../fonts/montserrat-mediumitalic.woff2') format('woff2'),
+    url('../fonts/montserrat-mediumitalic.woff') format('woff');
+  font-display: swap;
+}

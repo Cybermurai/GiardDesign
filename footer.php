@@ -1,8 +1,6 @@
-<footer class="container footer">
-Footer
-</footer>
-
-<?php wp_footer(); ?>
-
+<?php
+  get_template_part( 'template-parts/global/footer/template', 'footer' );
+  wp_footer(); 
+?>
 </body>
 </html>

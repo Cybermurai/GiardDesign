@@ -8,7 +8,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-  <header class="container header">
-  Header
-</header>
+<?php
+  wp_body_open();
+  get_template_part( 'template-parts/global/header/template', 'header' );
+?>
+

@@ -1,6 +1,54 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
   \*********************************************************************************************************/
-body {
-  background-color: gray;
+@font-face {
+  font-weight: 400;
+  font-family: Inter;
+  font-style: normal;
+  src: local(""), url(6fcad65b7a8f7ffabb8e.woff2) format("woff2"), url(f8c4b51c613b8c0f88ea.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 400;
+  font-family: Montserrat;
+  font-style: normal;
+  src: local(""), url(fc432875c59da8482816.woff2) format("woff2"), url(21e541a4a652a7fa0d6a.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 500;
+  font-family: Montserrat;
+  font-style: normal;
+  src: local(""), url(ee886f49896d934d6c26.woff2) format("woff2"), url(8fbdea08412c70e6d65c.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 500;
+  font-family: Montserrat;
+  font-style: italic;
+  src: local(""), url(66179256fae5555dead8.woff2) format("woff2"), url(3435f5f3da2ea0be3f00.woff) format("woff");
+  font-display: swap;
+}
+html {
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.container--column {
+  flex-direction: column;
+}
+
+.header {
+  color: #111;
+  background-color: #FFF;
+}
+
+.nav {
+  background: red;
 }

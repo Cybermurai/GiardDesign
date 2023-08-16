@@ -1,0 +1,15 @@
+html {
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+}
+
+.container{
+  display:flex;
+  flex-direction: row;
+  padding-right:2rem;
+  padding-left:2rem;
+
+  &--column{
+    flex-direction: column;
+  }
+}
