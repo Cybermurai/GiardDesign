@@ -16,7 +16,17 @@
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Navigation)\n/* harmony export */ });\nclass Navigation {\n  constructor() {\n    function dropdown() {\n      var jsMenu = document.querySelectorAll(\".jsMenu\");\n      //\n    }\n\n    document.querySelector(\".jsMenu\").addEventListener(\"click\", dropdown);\n  }\n}\n\n//# sourceURL=webpack://GiardDesign/./js/global/navigation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Navigation)\n/* harmony export */ });\nclass Navigation {\n  constructor() {\n    function dropdown() {\n      var jsMenu = document.querySelectorAll(\".jsMenu\");\n      document.querySelector(\".jsMenu .sub-menu\").classList.toggle('active');\n      document.querySelector(\".menu-item-has-children\").classList.toggle('rotate');\n    }\n    document.querySelector(\".jsMenu\").addEventListener(\"click\", dropdown);\n  }\n}\n\n//# sourceURL=webpack://GiardDesign/./js/global/navigation.js?");
+
+/***/ }),
+
+/***/ "./js/global/search.js":
+/*!*****************************!*\
+  !*** ./js/global/search.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ SearchInput)\n/* harmony export */ });\nclass SearchInput {\n  constructor() {\n    function toggleSearch() {\n      document.querySelector(\".jsSearch\").classList.add('active');\n      document.querySelector(\".jsSearchInput\").classList.add('active');\n    }\n    document.querySelector(\".jsSearch\").addEventListener(\"click\", toggleSearch);\n  }\n}\n\n//# sourceURL=webpack://GiardDesign/./js/global/search.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _global_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./global/navigation */ \"./js/global/navigation.js\");\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const navigation = new _global_navigation__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n});\n\n//# sourceURL=webpack://GiardDesign/./js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _global_navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./global/navigation */ \"./js/global/navigation.js\");\n/* harmony import */ var _global_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./global/search */ \"./js/global/search.js\");\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const search = new _global_search__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\n  const navigation = new _global_navigation__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n});\n\n//# sourceURL=webpack://GiardDesign/./js/main.js?");
 
 /***/ }),
 
