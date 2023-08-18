@@ -3,7 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     watch :true,
     entry: {
-        main: ["./scss/main.scss"]
+        main: ["./scss/main.scss"],
+        mainjs: ["./js/main.js"]
     },
     plugins: [
         new MiniCssExtractPlugin({
