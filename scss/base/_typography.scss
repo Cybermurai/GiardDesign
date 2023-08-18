@@ -1,0 +1,56 @@
+html {
+  font-weight: 400;
+  font-size: 62.5%;
+  font-family: Inter, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-weight: 400;
+  font-size:1.6rem;
+  font-family: Inter, sans-serif;
+  line-height:2.4rem;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ol {
+  padding-left: 2rem;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0 0 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+
+  &:only-child {
+    margin: 0;
+  }
+}
