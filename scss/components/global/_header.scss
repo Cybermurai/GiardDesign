@@ -1,5 +1,58 @@
 
 .header{
-  color: $black;
+  align-items: center;
+  justify-content:space-between;
+  padding:2.4rem 8.8rem;
   background-color:$white;
+
+  &__nav-container{
+    padding-right: 2.7rem;
+  }
+
+  @include breakpoint(medium){
+    padding:2.4rem;
+  }
+
+  &__nav{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpoint(medium){
+      display:none;
+    }
+  }
+
+  &__menu{
+    display:flex;
+    gap:5.4rem;
+
+    li a{
+      color:$black;
+      font-size:1.4rem;
+      font-family: Inter, sans-serif;
+      letter-spacing: -0.14px;
+      text-decoration: none;
+    }
+
+    .menu-item-has-children{
+      &::after{
+        position:absolute;
+        margin-left:5px;
+        transform: rotate(180deg);
+        cursor: pointer;
+        content: url('/assets/arrowDown.svg');
+      }
+    }
+
+    .sub-menu{
+      position:absolute;
+      width:12rem;
+      height:auto;
+      padding:1rem;
+      background-color:$white;
+      border:1px solid $secondary;
+    }
+  }
 }

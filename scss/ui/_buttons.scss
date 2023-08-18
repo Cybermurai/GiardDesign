@@ -1,0 +1,12 @@
+.btn{
+  background-color:transparent;
+  border:none;
+  border-radius:0;
+
+  &--search{
+    width:2.4rem;
+    height:2.4rem;
+    background-image :url('/assets/search.svg');
+    background-size: cover;
+  }
+}
