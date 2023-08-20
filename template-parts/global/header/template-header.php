@@ -5,7 +5,7 @@
   <div class="header__nav col-lg-10">
   <?php
     wp_nav_menu( array(
-	    'primary-menu' => 'Primary navigation',
+	    'menu' => 'Main menu',
       'container'			=> "nav",
       'container_class'	=> "header__nav-container",
       'menu_class'		=> "list list--clear header__menu jsMenu",

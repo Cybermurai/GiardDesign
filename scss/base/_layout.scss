@@ -1,5 +1,4 @@
 html {
-  // max-width:1440px;
   margin:0 auto;
   font-weight: 400;
   font-family: Inter, sans-serif;
@@ -7,12 +6,11 @@ html {
 }
 
 .container{
-  display:flex;
-  flex-direction: row;
-  padding-right:2rem;
-  padding-left:2rem;
-
   &--column{
     flex-direction: column;
+  }
+
+  &--medium{
+    max-width:104rem;
   }
 }

@@ -11897,9 +11897,19 @@ body {
   line-height: 2.4rem;
 }
 
-a {
+a, .link {
   text-decoration: none;
 }
+a:hover, a:focus, a:active, .link:hover, .link:focus, .link:active {
+  filter: brightness(80%);
+}
+a--grey, .link--grey {
+  color: #F5F0EC;
+}
+a--small, .link--small {
+  font-size: 1.4rem;
+}
+
 p {
   margin: 0 0 1rem;
 }
@@ -11950,20 +11960,23 @@ html {
   border: 1px solid red;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
 .container--column {
   flex-direction: column;
 }
+.container--medium {
+  max-width: 104rem;
+}
 
 .btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  height: 5rem;
+  line-height: 1;
   background-color: transparent;
   border: none;
-  border-radius: 0;
+  border-radius: 20rem;
 }
 .btn--search {
   width: 2.4rem;
@@ -11971,11 +11984,26 @@ html {
   background-image: url(5799394e1926dba32b5f.svg);
   background-size: cover;
 }
+.btn--primary {
+  padding: 1.2rem 2.4rem 1.4rem;
+  color: #F5F0EC;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: Inter, sans-serif;
+  background-color: #1B5B31;
+}
+.btn--primary:hover, .btn--primary:focus, .btn--primary:active {
+  background-color: #1B5B31;
+  filter: brightness(90%);
+}
 
 .list--clear, .list--clear * {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.list--inline {
+  display: inline-flex;
 }
 
 .header {
@@ -12079,7 +12107,65 @@ html {
   display: block;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 20rem;
+  color: #FFF;
+  background-color: #111;
+}
+@media (width <= 1400px) {
+  .footer {
+    padding: 8rem 10rem;
+  }
+}
+@media (width <= 768px) {
+  .footer {
+    padding: 8rem 4rem;
+  }
+}
+.footer__info {
+  padding-bottom: 6.2rem;
+}
+.footer__logo img {
+  filter: invert(100%);
+}
+.footer__cta {
+  gap: 1.2rem;
+}
+.footer__cta-text {
+  color: #F5F0EC;
+}
+.footer__shortcuts {
+  padding-top: 6.2rem;
+  border-top: 1px solid #F5F0EC;
+}
+.footer__nav {
+  display: flex;
+  gap: 4.8rem;
+}
+.footer__nav li a {
+  color: #F5F0EC;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  letter-spacing: -0.14px;
+}
+.footer__contact {
+  gap: 4.8rem;
+}
+.footer__copyrights {
+  width: 100%;
+  padding-top: 12rem;
+}
+.footer__copyrights span {
+  color: #F5F0EC;
+}
+.footer__copy {
+  gap: 1.6rem;
+}
+
 .hero {
   height: 737px;
-  background-color: #DCC1AB;
+  background-color: #1B5B31;
 }

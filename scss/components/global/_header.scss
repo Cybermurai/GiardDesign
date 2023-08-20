@@ -59,18 +59,18 @@
       width: fit-content;
       height: auto;
       padding: 1rem 2rem;
-      background-color: #FFF;
+      background-color: $white;
       border-radius: 3px;
       box-shadow: 2px 2px 5px $black50;
       transition:0.3s;
 
       li{
         padding-bottom:0.5rem;
-        border-bottom:1px solid $gray0;
+        border-bottom:1px solid $grey0;
         transition:0.3s;
 
         &:hover{
-          border-bottom:1px solid $gray50;
+          border-bottom:1px solid $grey50;
         }
       }
     }
@@ -104,7 +104,7 @@
       justify-content: flex-end;
       width: 280px;
       padding: 4px;
-      border: 1px solid $gray0;
+      border: 1px solid $grey0;
       border-radius: 4px;
 
       input[type='text']{

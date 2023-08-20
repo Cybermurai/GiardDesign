@@ -14,11 +14,19 @@ body {
   line-height:2.4rem;
 }
 
-a {
+a, .link {
   text-decoration: none;
 
-  &:hover {
-    
+  &:hover, &:focus, &:active{
+    filter:brightness(80%);
+  }
+
+  &--grey{
+    color:$grey;
+  }
+
+  &--small{
+    font-size:1.4rem;
   }
 }
 

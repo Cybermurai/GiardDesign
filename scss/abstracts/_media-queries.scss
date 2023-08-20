@@ -1,6 +1,6 @@
 @mixin breakpoint($point) {
   @if $point == small {
-    @media (width <= 760px) {
+    @media (width <= 768px) {
       @content;
     }
   } @else if $point == medium {
