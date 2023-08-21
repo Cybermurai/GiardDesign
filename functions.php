@@ -10,7 +10,6 @@ add_action( 'wp_enqueue_scripts', 'giarddesign_theme' );
 
 
 if ( ! function_exists( 'gd_register_nav_menu' ) ) {
-
 	function gd_register_nav_menu(){
 		register_nav_menus( array(
 	    	'primary_menu' => __( 'Primary Menu', 'GiardDesign' ),

@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="row g-0 footer__shortcuts d-flex">
+    <div class="row g-0 d-flex footer__shortcuts">
       <div class="col-xxl-8">
         <?php
           wp_nav_menu( array(

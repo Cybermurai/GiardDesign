@@ -1,8 +1,5 @@
 
 .header{
-  align-items: center;
-  justify-content:space-between;
-  height:8.5rem;
   padding:2.6rem 8.8rem;
   background-color:$white;
 
@@ -17,8 +14,6 @@
   &__nav{
     display: flex;
     gap:2rem;
-    align-items: center;
-    justify-content: flex-end;
 
     @include breakpoint(medium){
       display:none;

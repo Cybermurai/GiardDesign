@@ -1,4 +1,3 @@
-import * as bootstrap from 'bootstrap'
 import Navigation from "./global/navigation";
 import SearchInput from "./global/search";
 
