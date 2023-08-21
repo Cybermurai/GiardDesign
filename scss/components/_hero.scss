@@ -1,28 +1,46 @@
 .hero{
-  &__slider{
-    
-  }
-
   &__item{
-    min-height:60rem;
+    min-height:73.7rem;
 
     @include breakpoint(small){
       height:20rem;
     }
   }
 
-  &__bg{
-    min-height:60rem;
+  &__content{
+    flex: 0 0 55% !important;
+    gap:7.2rem;
+    align-items: center;
+    justify-content: center;
+    max-width:55% !important;
+    min-height:73.7rem;
     background-color:$secondary;
 
     @include breakpoint(small){
+      flex: 0 0 100% !important;
+      max-width:100% !important;
       min-height:20rem;
     }
   }
 
-  &__img{
+  &__inner-content{
+    gap: 5rem;
+    max-width: 61rem;
+    padding-right: 9rem;
+  }
+
+  &__description{
+    color: $black;
+  }
+
+  &__buttons{
+    gap:3.6rem;
+    align-self: flex-start;
+  }
+
+  &__image{
     position:absolute;
-    right: 0;
+    right: -3.5rem;
     height: 100%;
     padding:0;
 
@@ -31,12 +49,13 @@
     }
   }
 
-  img{
+  &__img{
     width: 100%;
     height: 100%;
-    max-height:60rem;
+    max-height:73.7rem;
     object-fit: cover;
   }
+
 }
 
 
