@@ -2,7 +2,7 @@
   <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner hero__slider">
     <div class="carousel-item hero__item active">
-      <div class="row d-flex mx-auto container">
+      <div class="row d-flex mx-auto container--xlarge">
         <div class="col-sm-12 col-md-6 d-flex flex-column hero__content">
           <div class="d-flex flex-column hero__inner-content">
           <h1 class="hero__title">Nowoczesna aranżacja Twojego ogrodu</h1>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="carousel-item hero__item">
-      <div class="row d-flex mx-auto container">
+      <div class="row d-flex mx-auto container--xlarge">
         <div class="col-sm-12 col-md-6 d-flex flex-column hero__content">
           <div class="d-flex flex-column hero__inner-content">
           <h1 class="hero__title">Nowoczesna aranżacja Twojego ogrodu</h1>

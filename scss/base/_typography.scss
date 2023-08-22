@@ -20,6 +20,7 @@ a, .link {
 
   &:hover, &:focus, &:active{
     color:$black;
+    text-decoration: none;
     filter:brightness(80%);
   }
 
