@@ -1,0 +1,23 @@
+.offer{
+  gap:9.6rem;
+  padding-top:12rem;
+  padding-bottom:16rem;
+  background-color:$grey;
+
+  &__content{
+    max-width:70.9rem;
+    border:1px solid red;
+  }
+
+  &__blocks{
+    gap:6.4rem;
+    margin:0;
+    border:1px solid blue;
+  }
+
+  &__item{
+    padding:4.8rem 4.0rem;
+    background:$white;
+    border-radius:2.9rem;
+  }
+}

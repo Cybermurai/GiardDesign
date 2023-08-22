@@ -1,5 +1,5 @@
 <header class="row header">
-  <div class="w-100 d-flex justify-content-bewteen align-items-center">
+  <div class="container container--large mx-auto w-100 d-flex justify-content-bewteen align-items-center">
     <div class="header__logo col-lg-2">
       <img src="<?php echo get_template_directory_uri() . '/assets/logo.svg'; ?>" alt="<?php echo get_bloginfo( 'title' ); ?>">
     </div>
