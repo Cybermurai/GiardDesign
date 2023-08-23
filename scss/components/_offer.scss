@@ -5,8 +5,12 @@
   background-color:$grey;
 
   &__content{
+    gap:1.6rem;
     max-width:70.9rem;
-    border:1px solid red;
+  }
+
+  &__content-inner{
+    gap:3.2rem; 
   }
 
   &__blocks{
