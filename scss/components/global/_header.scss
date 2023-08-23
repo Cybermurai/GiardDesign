@@ -41,7 +41,7 @@
     .menu-item-has-children{
       &::after{
         position:absolute;
-        top: 3.2rem;
+        top: 0;
         margin-left: 4.7rem;
         cursor: pointer;
         content: url('/assets/arrowDown.svg');

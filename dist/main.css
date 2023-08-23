@@ -112,6 +112,35 @@ h1, .h1 {
   line-height: 7rem;
 }
 
+.title {
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+}
+.title--big {
+  font-size: 6rem;
+  line-height: 7rem;
+}
+.title--medium {
+  font-size: 48px;
+  line-height: 5.52rem;
+  letter-spacing: -1.44px;
+}
+.title--small {
+  font-size: 2.8rem;
+  line-height: 32.2rem;
+  letter-spacing: -1.4px;
+}
+.title--sup {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: Inter, sans-serif;
+  line-height: 1.8rem;
+  letter-spacing: -0.12px;
+}
+.title--primary {
+  color: #1B5B31;
+}
+
 html {
   margin: 0 auto;
   font-weight: 400;
@@ -218,7 +247,7 @@ html {
 }
 .header__menu .menu-item-has-children::after {
   position: absolute;
-  top: 3.2rem;
+  top: 0;
   margin-left: 4.7rem;
   cursor: pointer;
   content: url(9698f87f7ef45655a659.svg);
@@ -395,8 +424,11 @@ html {
   background-color: #F5F0EC;
 }
 .offer__content {
+  gap: 1.6rem;
   max-width: 70.9rem;
-  border: 1px solid red;
+}
+.offer__content-inner {
+  gap: 3.2rem;
 }
 .offer__blocks {
   gap: 6.4rem;
