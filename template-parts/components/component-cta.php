@@ -1,3 +1,6 @@
 <section class="cta">
-  cta component
+  <div class="container container--medium cta__container">
+111
+
+  </div>
 </section>
